@@ -1,19 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import configureStore from "./store/store";
-
-// import Root from "./components/root";
-
-class Root extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1> TESTING </h1>
-      </div>
-    );
-  }
-}
+import Power from "./components/power/power.jsx";
 
 document.addEventListener("DOMContentLoaded", () => {
-  ReactDOM.render(<Root />, document.getElementById("main"));
+  ReactDOM.render(<Power />, document.getElementById("main"));
 });
