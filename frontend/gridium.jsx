@@ -4,13 +4,16 @@ import ReactDOM from "react-dom";
 
 // import Root from "./components/root";
 
-document.addEventListener("DOMContentLoaded", () => {
-  const preloadedState = localStorage.state
-    ? JSON.parse(localStorage.state)
-    : {};
-  //   const store = configureStore(preloadedState);
+class Root extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1> TESTING </h1>
+      </div>
+    );
+  }
+}
 
-  const root = document.getElementById("content");
-  //   ReactDOM.render(<Root store={store} />, root);
-  ReactDOM.render(<h1>Todos App</h1>);
+document.addEventListener("DOMContentLoaded", () => {
+  ReactDOM.render(<Root />, document.getElementById("main"));
 });
