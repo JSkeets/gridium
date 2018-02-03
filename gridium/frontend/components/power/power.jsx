@@ -13,22 +13,7 @@ class Power extends React.Component {
     };
   }
 
-  componentDidMount() {
-    fetch(
-      "https://snapmeter.com/api/v2/531e19848df5cb0b35014e85/meters/2166484536790/bill-summary?token=6d547442-417b-41a3-8838-b022f9c2974d"
-    )
-      .then(res => res.json())
-      .then(
-        result => {
-          this.setState({ loading: false, data: result });
-        }, // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
-        error => {
-          this.setState({ loading: false, errors: true });
-        }
-      );
-  }
+  componentDidMount() {}
 
   render() {
     return (

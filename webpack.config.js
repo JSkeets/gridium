@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   context: __dirname,
-  entry: "./frontend/gridium.jsx",
+  entry: "./gridium/frontend/gridium.jsx",
   output: {
     path: path.resolve(__dirname),
     filename: "bundle.js"
